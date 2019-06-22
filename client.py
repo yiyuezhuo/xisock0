@@ -15,6 +15,8 @@ import websockets
 
 xi_addr = 'ws://' + xi_host + ':' + str(xi_port) # i.e. 'ws://localhost:8765'
 
+print('target server addr', xi_addr)
+
 async def listener(reader, writer):
     try:
         
